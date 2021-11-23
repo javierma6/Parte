@@ -1,0 +1,160 @@
+<meta charset="utf-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+  .row-centro {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #btn1 {
+    margin-top: 10%;
+  }
+
+  #btn2 {
+    margin-top: 10%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="row-centro">
+      <img src="logo.jpg"></img>
+    </div>
+    <!-- TÍTULOS -->
+    <div class="row">
+      <h3 class="header left teal-text">PARTE BUENA CONDUCTA</h3>
+    </div>
+    <!-- <div class="row">
+      <h5 class="header left teal-text">SUBTITULO FORMULARIO</h5>
+    </div> -->
+
+    <form class="col s12" action="" method="">
+
+      <!-- CAMPOS INPUT TEXT -->
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="nombre" type="text" class="validate">
+          <label for="nombre">Sr.De</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="cp" type="text" class="validate">
+          <label for="cp">CP</label>
+        </div>
+      </div>
+
+      <!-- CAMPOS TEXTAREA -->
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea id="direccion" class="materialize-textarea"></textarea>
+          <label for="direccion">C/Pl/Avda</label>
+        </div>
+        <div class="input-field col s6">
+          <textarea id="ciudad" class="materialize-textarea"></textarea>
+          <label for="ciudad">Ciudad</label>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+      <!-- CAMPOS FECHA -->
+      <div class="row">
+        <h5 class="header left teal-text">ASUNTO: PARTE DE BUENA CONDUCTA</h5>
+        <br><br>
+        <p>
+          Muy señores nuestros:
+          En consonancia con los dispuesto en nuestro Reglamento Orgánico de Funcionamiento referido
+          a las "Normas de Funcionamiento", apartado VII.b, Amonestaciones; el profesor que haya
+          puesto una amonestación a un alumno/a, podrá anular dicha amonestación, quedando ésta
+          invalidada a todos los efectos. <br>
+          Por lo tanto, nos ponemos en contacto con ustedes para informarles de los motivos que han
+          llevado a tramitar dicho "Parte de buena conducta" a su hijo/a:
+          <textarea name="hijo" id="hijo" class="materialize-textarea" placeholder="Nombre hijo/a"></textarea>
+          del curso<textarea name="curso" id="curso" class="materialize-textarea" placeholder="Curso"></textarea>
+          <br>
+        <p id="mot">Motivos:</p>
+        <div class="row">
+          <p>
+            <label>
+              <input type="checkbox" name="motivos" id="1" />
+              <span>El alumno demuestra interés</span>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="motivos" id="2" />
+              <span>El alumno entrega todas las tareas</span>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="motivos" id="3" />
+              <span>El alumno se muestra participativo</span>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="motivos" id="4" />
+              <span>Han subido sus notas notablemente</span>
+            </label>
+          </p>
+        </div>
+        Otros<textarea name="motivos" id="5" class="materialize-textarea" placeholder="Otros motivos"></textarea>
+        </p>
+        Se llama a la familia el día <br>
+        <div class="input-field col s6">
+          <input type="date" class="datepicker" id="fechaCita" />
+          <!-- <label>Fecha cita</label> -->
+        </div>
+        <div class="input-field col s6">
+          <input type="text" class="datepicker" id="horaCita" placeholder="Hora" />
+          <!-- <label>Fecha cita</label> -->
+        </div>
+        <br><br><br><br>
+        Persona con la que se contacta
+        <br>
+        <textarea name="persona" id="persona" class="materialize-textarea" placeholder="Contacto"></textarea><br><br>
+
+        Para cualquier aclaración, póngase en contacto con el Centro.
+        <br>
+        Navalmoral de la Mata, a <input type="date" class="datepicker" id="fechaFirma" />
+
+        <br><br><br><br>
+
+        Fdo. Raúl Garrido Jiménez <br>
+        Jefe de Estudios
+
+        <br><br>
+
+        Fdo.<textarea name="firmaProf" id="firmaProf" class="materialize-textarea" placeholder="Firma"></textarea><br>
+        Profesor de <textarea name="asignatura" id="asignatura" class="materialize-textarea"
+          placeholder="Asignatura"></textarea><br><br>
+        <input type="submit" value="Insertar" id="btn1" name="btn1" class="waves-effect waves-light btn">
+        <input type="reset" value="Eliminar" id="btn2" name="btn2" class="waves-effect waves-light btn red lighten-2">
+
+      </div>
+
+  </div>
+
+  </form>
+
+  </div>
+  </div>
+</body>
+
+<script>
+  //Evento para el select
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('select');
+    var options = document.querySelectorAll('option');
+    var instances = M.FormSelect.init(elems, options);
+  })
+
+
+  //Evento para los campos fecha
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.datepicker');
+
+  });
+</script>
