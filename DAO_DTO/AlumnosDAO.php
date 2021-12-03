@@ -6,7 +6,7 @@ include_once 'DatosAlumnoDTO.php';
 
 //Añadiendo el archivo conexion.php que obtiene la conexión
 // leyendo los datos de conexión de un fichero .ini
-include_once './conexiones/conexion.php';
+include_once '../conexiones/conexion.php';
 
 
 // Comprobar la conexión

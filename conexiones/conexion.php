@@ -17,6 +17,8 @@ $conexion = mysqli_connect($config['host'],$config['username'],$config['password
 if ($conexion===false) {
 
    echo 'ERROR: '.mysqli_connect_error();
+} else{
+   echo 'CONECTADO';
 }
 
 

@@ -9,25 +9,6 @@ class Alumno
 	private $_ciudad;
 	private $_calle;
 
-    //constructor parametrizado
-    /*
-    public function __construct(Alumno $alumno)
-    {
-        $this->_id = $alumno->getID();
-        $this->_nombreP = $alumno->getNombreP();
-        $this->_apellidosP = $alumno->getApellidosP();
-        $this->_cp = $alumno->getCP();
-        $this->_ciudad = $alumno->getCiudad();
-        $this->_calle = $alumno->getCalle();
-
-    }
-
-    //contructor vacío
-    public function __construct(){
-
-    }
-    */
-
     //Getters y setters
     /**
      * @return int
@@ -52,7 +33,7 @@ class Alumno
 
     public function setNombreP($nombreP)
     {
-        $this->_nombrep = $nombreP;
+        $this->_nombreP = $nombreP;
     }
 
     /**
