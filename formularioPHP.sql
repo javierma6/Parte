@@ -8,7 +8,7 @@ codigo postal, ciudad y calle en la que vive.
 */
 CREATE TABLE alumno(
 id int primary key auto_increment,
-nombrePadre varchar(20),
+nombrePadre varchar(20) not null,
 apellidosPadre VARCHAR(40) NOT NULL,
 cp int NOT NULL,
 ciudad VARCHAR(50) NOT NULL,
@@ -21,7 +21,7 @@ la fecha de quedada con el tutor legal y el curso en el que se encuentra el alum
 */
 CREATE TABLE parte(
 id int primary key auto_increment,
-nombreAlumno varchar(20),
+nombreAlumno varchar(20) not null,
 motivo varchar(40) not null,
 fechaQuedada date not null, 
 curso VARCHAR(50) NOT NULL
@@ -34,7 +34,6 @@ Tabla profesor, contiene su nombre y apellidos, firma y asignatura
 create table profesor(
 id int primary key auto_increment,
 nombre varchar(25) not null,
-apellidos varchar(25) not null,
 firmaProfesor varchar(25) not null,
 asignatura varchar(25) not null
 );
